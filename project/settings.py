@@ -157,7 +157,7 @@ STATICFILES_DIRS = [
 ]
 
 # WhiteNoise static files storage for production (with cache-busting)
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / "media"
