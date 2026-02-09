@@ -7,7 +7,7 @@ from .models import Transfer, Notification, Beneficiary
 from .utils import is_account_frozen, get_freeze_reason_display, send_html_email
 from decimal import Decimal
 from django.conf import settings
-from django.core.mail import send_mail
+
 from userauths.models import User
 
 

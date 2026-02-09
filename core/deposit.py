@@ -15,7 +15,7 @@ from .models import (
 # from .crypto_service import CryptoExchangeService  # Commented out - module doesn't exist
 from .utils import is_account_frozen, get_freeze_reason_display, send_html_email
 from django.core.exceptions import ValidationError
-from django.core.mail import send_mail
+
 from userauths.models import User
 
 # Initialize NOWPayments client - COMMENTED OUT
