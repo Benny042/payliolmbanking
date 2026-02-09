@@ -186,10 +186,7 @@ JAZZMIN_SETTINGS = {
 
 if not DEBUG:
     # CSRF Trusted Origins (required for Django 4.0+ with HTTPS)
-    CSRF_TRUSTED_ORIGINS = [
-        'https://localhost:8000',
-        # Add any other production domains here
-    ]
+    CSRF_TRUSTED_ORIGINS = os.environ.get('CSRF_TRUSTED_ORIGINS', 'https://localhost:8000').split(',')
     
     # HTTPS/SSL Settings
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
