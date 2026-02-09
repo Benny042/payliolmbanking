@@ -132,7 +132,8 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.environ.get('MAILERSEND_USERNAME', '')
 EMAIL_HOST_PASSWORD = os.environ.get('MAILERSEND_PASSWORD', '')
-DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL', 'Paylio <noreply@paylio.com>')
+DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL', 'Paylio <MS_gYDNa1@test-69oxl5eov82l785k.mlsender.net>')
+EMAIL_TIMEOUT = 10  # Timeout in seconds to prevent worker hangs
 
 
 # Internationalization
